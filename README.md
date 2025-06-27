@@ -26,7 +26,7 @@ This repository documents my learning journey across Python, Neural Networks, Co
 - Built a fully functional **Snake Game** using Pygame
 - Saved under: `Week1/snake_game.py`
 
-#### 📁 Resources Used
+#### Resources Used
 - W3Schools Python
 - GeeksforGeeks Pygame
 - Snake Game Tutorial by Tech with Tim
