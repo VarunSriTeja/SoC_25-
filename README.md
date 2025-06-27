@@ -94,7 +94,7 @@ This repository documents my learning journey across Python, Neural Networks, Co
 ####  What I Already Knew
 - Basic idea that DQN is used for decision-making in complex environments like games
 
-#### 📈 What I Improved
+#### What I Improved
 - Understanding of how **Q-learning is extended using Deep Learning**
 - Use of **Replay Buffers**, **Target Networks**
 
