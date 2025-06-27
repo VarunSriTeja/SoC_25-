@@ -89,16 +89,16 @@ This repository documents my learning journey across Python, Neural Networks, Co
 
 ---
 
-### ✅ Week 4: Deep Q-Learning & DQNs
+###  Week 4: Deep Q-Learning & DQNs
 
-#### 🔍 What I Already Knew
+####  What I Already Knew
 - Basic idea that DQN is used for decision-making in complex environments like games
 
 #### 📈 What I Improved
 - Understanding of how **Q-learning is extended using Deep Learning**
 - Use of **Replay Buffers**, **Target Networks**
 
-#### 🧠 New Concepts Learned
+#### New Concepts Learned
 - Deep Q Networks (DQNs): using neural nets to approximate Q-values
 - Challenges like instability, and how they're solved (fixed Q-targets, experience replay)
 - Hyperparameters: epsilon, gamma, learning rate
@@ -107,7 +107,7 @@ This repository documents my learning journey across Python, Neural Networks, Co
   - **Deep Q-learning** (theory)
   - **Deep Q-Network (DQN)** (architecture)
 
-#### 📁 Resources Used
+#### Resources Used
 - Sentdex DQN Playlist
 - Baeldung & Medium articles on Q-learning vs DQN
 - PyTorch DQN implementation (video walkthroughs)
