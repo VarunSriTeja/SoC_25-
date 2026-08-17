@@ -1,0 +1,73 @@
+\documentclass{article}
+\usepackage{graphicx}
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage{geometry}
+\geometry{margin=1in}
+
+\title{Comparison of Tabular Q-Learning and Deep Q-Networks (DQN) for Snake}
+\author{Your Name}
+\date{\today}
+
+\begin{document}
+
+\maketitle
+
+\section{Introduction}
+Reinforcement learning (RL) has been successfully applied to classic games such as Snake. In this project, we compare two RL approaches: Tabular Q-learning and Deep Q-Networks (DQN). We analyze their performance and learning characteristics on the Snake game environment.
+
+\section{Tabular Q-Learning}
+Tabular Q-learning is a model-free RL algorithm that maintains a table of Q-values for each state-action pair. It is suitable for environments with small, discrete state spaces. In our implementation, the state was discretized, and the agent learned optimal actions through repeated interactions.
+
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=0.7\textwidth]{image1.png}
+    \caption{Performance of Tabular Q-learning on Snake.}
+    \label{fig:tabular}
+\end{figure}
+
+\section{Deep Q-Network (DQN)}
+DQN extends Q-learning by using a neural network to approximate the Q-value function, enabling it to handle high-dimensional or continuous state spaces. In our project, DQN was trained using a feature-based state representation.
+
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=0.7\textwidth]{image2.png}
+    \caption{Performance of DQN on Snake.}
+    \label{fig:dqn}
+\end{figure}
+
+\section{Comparison}
+To visually compare the learning curves of Tabular Q-learning and DQN, we present both results side by side in Figure~\ref{fig:comparison}. After training both agents for 130 episodes, we observed significant performance differences:
+
+\begin{itemize}
+    \item \textbf{Tabular Q-Learning}: Achieved a peak score of \textbf{18}
+    \item \textbf{DQN}: Achieved a peak score of \textbf{54}
+\end{itemize}
+
+DQN significantly outperformed Tabular Q-learning, achieving nearly 3x higher peak scores. This demonstrates the advantage of using neural networks to approximate Q-values, allowing the agent to generalize better from the feature-based state representation compared to the discrete state space limitations of tabular methods.
+
+\begin{figure}[h!]
+    \centering
+    \begin{subfigure}[b]{0.45\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{image1.png}
+        \caption{Tabular Q-learning}
+    \end{subfigure}
+    \hfill
+    \begin{subfigure}[b]{0.45\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{image2.png}
+        \caption{DQN}
+    \end{subfigure}
+    \caption{Comparison of Tabular Q-learning and DQN results on Snake.}
+    \label{fig:comparison}
+\end{figure}
+
+\section{Conclusion}
+This report compared Tabular Q-learning and DQN for the Snake game. DQN outperformed Tabular Q-learning in terms of learning speed and final performance. Further work could include evaluating Convolutional DQN (ConvDQN) with raw pixel input.
+
+% Placeholder for ConvDQN results
+% \section{Convolutional DQN (ConvDQN)}
+% Results and analysis to be added in future work.
+
+\end{document} 
