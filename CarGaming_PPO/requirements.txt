@@ -1,0 +1,8 @@
+gymnasium[box2d]
+numpy
+torch
+matplotlib
+imageio
+imageio-ffmpeg
+stable-baselines3
+opencv-python
